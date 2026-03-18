@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Company Name</title>
+<title>Brooklyn Bat Co.</title>
 
 <style>
 
@@ -17,8 +17,22 @@ body{
 .container{
     max-width:900px;
     margin:auto;
-    padding:40px 20px;
+    padding:40px 15px;
     text-align:center;
+}
+
+.section {
+      background: #333;
+      padding: 24px;
+      margin: 24px 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      text-align: left;
+}
+
+.section h2 {
+    margin-top: 0;
+    text-align: center;
 }
 
 .logo{
@@ -35,14 +49,62 @@ h1{
     font-size:18px;
 }
 
-.contact p{
-    margin:6px 0;
+.contact p,
+.pricing p {
+    margin: 8px 0;
+    font-size: 17px;
     color: white;
-;
+}
+
+.holding{
+    text-align: left;
+}
+
+.bat{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto 12px auto;
+    border-radius: 10px;
+}
+
+.holding p{
+    text-align: center;
+}
+
+.pricing-note {
+    font-size: 14px;
+    color: #666;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.colors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.color-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+    background: #fafafa;
+}
+
+.swatch {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    border: 1px solid #ccc;
 }
 
 .socials{
-    margin-top:30px;
+    margin-top:15px;
     color: white;
 }
 
@@ -62,9 +124,19 @@ h1{
 }
 
 footer{
-    margin-top:40px;
+    margin-top:20px;
     font-size:14px;
     color: white;
+}
+
+@media (max-width: 600px) {
+      .container {
+        padding: 24px 14px;
+      }
+
+      .section {
+        padding: 18px;
+      }
 }
 
 </style>
@@ -79,11 +151,24 @@ footer{
 <img src="logo.jpg" alt="Company Logo" class="logo">
 
 <h1>Brooklyn Bat Co.</h1>
-<p>Contact us via email or instagram dm to place your order!</p>
+<p>Contact us via email or Instagram DM to place your order!</p>
+
+<!-- Pricing -->
+<div class="section pricing">
+    <h2>Pricing</h2>
+    <div class="holding">
+        <img src="bat.jpg" alt="Wood Bat" class="bat"> 
+        <p>Wood Bats: $149.99 </p> 
+        <p>Engraving +$15.00, Shipping +$15.00 </p>
+        <p class="pricing-note">
+        Final pricing may vary based on model, finish, and customization. 
+        </p>
+    </div>
+</div>
 
 <!-- Contact Information -->
 <div class="contact">
-<h2>Contact</h2>
+<h2>Contact Us</h2>
 
 <p>Email: sales@brooklynbatco.com</p>
 
@@ -91,8 +176,6 @@ footer{
 
 <!-- Social Links -->
 <div class="socials">
-
-<h2>Connect With Us</h2>
 
 <a href="https://facebook.com/brooklynbats" target="_blank">Facebook</a>
 <a href="https://instagram.com/brooklynbatco" target="_blank">Instagram</a>
